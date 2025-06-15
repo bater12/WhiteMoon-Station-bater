@@ -1,14 +1,73 @@
+
+/datum/heretic_knowledge/limited_amount/starting/base_ash
+	name = "Nightwatcher's Secret"
+	desc = "Открывает перед вами Путь Пепла. \
+		Позволяет преобразовать спичку и нож в Пепльный Клинок. \
+		Одновременно можно создать не более пяти клинков." //SKYRAT EDIT two to five
+	gain_text = "Городские стражи не болтают лишнего. Но если спросить их в ночную смену, может, и проболтаются насчёт этого проклятого пепельного фонаря."
+
+/datum/heretic_knowledge/ashen_grasp
+	name = "Grasp of Ash"
+	desc = "Хватка Мансуса обжигает глаза противника, повреждая и ухудшая зрение."
+	gain_text = "Ночной Страж был первым из них — его предательство положило начало всему. \
+		Их фонарь угас, превратившись в пепел, а дозор — исчез."
+
+/datum/heretic_knowledge/spell/ash_passage
+	name = "Ashen Passage"
+	desc = "Дарует заклинание Ashen Passage — позволяет на мгновение выйти за пределы реальности, преодолевая небольшое расстояние и проходя сквозь стены."
+	gain_text = "Он постиг искусство перемещения между измерениями."
+
+/datum/heretic_knowledge/mark/ash_mark
+	name = "Mark of Ash"
+	desc = "Ваша Хватка Мансуса теперь накладывает Мету Пепла. Метка активируется при атаке вашим Пепличным Клинком. \
+		При активации жертва получает дополнительный урон по выносливости и огнём, и передаёт метку ближайшему нечестивцу. \
+		Урон уменьшается с каждой передачей. \
+		Активация меты также значительно сокращает время восстановления Хватки Мансуса."
+	gain_text = "Он был человеком своеобразным — всегда бодрствовал в глухую полночь. \
+		Но, несмотря на свою обязанность, он часто бродил в трансе по Усадьбе, высоко подняв пылающий фонарь. \
+		Он ярко светил во тьме, пока пламя не начало угасать."
+
+/datum/heretic_knowledge/spell/fire_blast
+	name = "Volcano Blast"
+	desc = "Дарует заклинание Volcano Blast — после краткого заряда оно выпускает луч энергии \
+		в ближайшего врага, поджигая его. Если цель не потушит себя, \
+		луч перейдёт на следующую жертву."
+	gain_text = "Никакое пламя не смогло их разжечь вновь. Никакой свет — не спас. И даже самый яростный огонь — не длится вечно."
+
+/datum/heretic_knowledge/mad_mask
+	name = "Mask of Madness"
+	desc = "Позволяет преобразовать любую маску, четыре свечи, станбатон и печень, создав Маску Безумия. \
+		Маска внушает ужас нечистым, нанося урон выносливости, вызывая галлюцинации и безумие. \
+		Её можно насильно надеть на нечистого, и он не сможет её снять..."
+	gain_text = "Дозорные считали Ночного Стража пропавшим. Но он всё ещё бродил среди людей — невидимый, непризнанный."
+
+/datum/heretic_knowledge/blade_upgrade/ash
+	name = "Fiery Blade"
+	desc = "Теперь при каждом ударе ваш клинок воспламеняет врагов!"
+	gain_text = "Он вернулся, с клинком в руке, рубил снова и снова, пока пепел падал с небес. \
+		Его город, люди, которых он клялся охранять... И он действительно наблюдал - наблюдал, как они все обращаются в пепел."
+
+/datum/heretic_knowledge/spell/flame_birth
+	name = "Nightwatcher's Rebirth"
+	desc = "Дарует заклинание Возрождение Ночного Стража: тушит вас \
+		и сжигает всех горящих еретиков вокруг, восстанавливая здоровье за каждую поражённую жертву. \
+		Если поражённые жертвы находятся в критическом состоянии - они мгновенно умирают."
+	gain_text = "Пламя поглотило всё. Но сквозь почерневшую плоть ещё билось сердце. \
+		Ведь Ночной Смотритель — существо упрямое. Он не мог не наблюдать."
+
 /datum/heretic_knowledge/ultimate/ash_final
 	name = "Ashlord's Rite"
-	desc = "The ascension ritual of the Path of Ash. \
-		Bring 3 burning or husked corpses to a transmutation rune to complete the ritual. \
-		When completed, you become a harbinger of flames, gaining two abilites. \
-		Cascade, which causes a massive, growing ring of fire around you, \
-		and Oath of Flame, causing you to passively create a ring of flames as you walk. \
-		Some ashen spells you already knew will be empowered as well. \
-		You will also become immune to flames, space, and similar environmental hazards."
-	gain_text = "The Watch is dead, the Nightwatcher burned with it. Yet his fire burns evermore, \
-		for the Nightwatcher brought forth the rite to mankind! His gaze continues, as now I am one with the flames, \
-		WITNESS MY ASCENSION, THE ASHY LANTERN BLAZES ONCE MORE!"
-	announcement_text = "%SPOOKY% Fear the blaze, for the Ashlord, %NAME% has ascended! The flames shall consume all! %SPOOKY%"
+	desc = "Ритуал вознесения Пути Пепла. \
+        Принесите 3 горящих или обугленных трупа на руну транс мутации для завершения ритуала. \
+        После завершения вы станете предвестником пламени, получив две новые способности\
+        Каскад, вызывает огненное кольцо, растущее до гигантских размеров, \
+        и Клятва Пламени, вызывает огонь при каждом вашем шаге \
+        Некоторые из заклинаний что вы и так знали, будут усилены \
+        Также вы станете устойчивы к огню, космосу, и другим внешним опасностям"
+	gain_text = "Дозор пал, и Ночной Смотритель был обращён в пепел, но не погас его огонь \
+        ведь принёс он людям священный обряд! Очи его открыли свой взор на меня, ведь я стал единым с пламенем, \
+        УЗРИТЕ МОЁ ВОЗНЕСЕНИЕ, ДА ВОСПЫЛАЕТ ЖЕ ПЕПЕЛЬНЫЙ ФОНАРЬ ВНОВЬ!"
+	announcement_text = "%SPOOKY% Страшись огня, ибо Владыка Пепла, %NAME% был пробуждён! Пламя поглотит все что встретит у себя на пути! %SPOOKY%"
 	announcement_sound = 'modular_zzz/sounds/heretic/ash_lore.ogg'
+
+

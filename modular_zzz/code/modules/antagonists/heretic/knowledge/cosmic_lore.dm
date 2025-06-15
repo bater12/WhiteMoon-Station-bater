@@ -1,17 +1,82 @@
+
+/datum/heretic_knowledge/limited_amount/starting/base_cosmic
+	name = "Eternal Gate"
+	desc = "Открывает вам Путь Космоса. \
+		Позволяет преобразовать лист плазмы и нож в Космический Клинок. \
+		Можно создать только два одновременно."
+	gain_text = "В небе возникла туманность, и её адское сияние озарило меня. Это было началом великого преображения"
+
+
+/datum/heretic_knowledge/cosmic_grasp
+	name = "Grasp of Cosmos"
+	desc = "Ваша Хватка Мансуса помечает людей звёздной меткой (космическим кольцом) и создаёт космическое поле под вами. \
+		Помеченные не могут проходить сквозь такие поля."
+	gain_text = "Звёзды гаснут и вспыхивают в новом порядке. \
+		Я чувствую, как сила туманности вливается в меня — и всё внутри загорается!"
+
+/datum/heretic_knowledge/spell/cosmic_runes
+	name = "Cosmic Runes"
+	desc = "Дарует заклинание Cosmic Runes — создаёт две связанные между собой руны для мгновенного перемещения. \
+		Телепортирует только того, кто активировал руну (может использоваться кем угодно, кроме помеченных звёздной меткой). \
+		Однако, носители звёздной метки будут телепортироваться вместе с другим человеком, использующим руну."
+	gain_text = "Далёкие звёзды проникли в мои сны, безумно ревя и крича без причины. \
+		Я заговорил — и услышал, как мои же слова эхом вернулись ко мне."
+
+/datum/heretic_knowledge/mark/cosmic_mark
+	name = "Mark of Cosmos"
+	desc = "Хватка Мансуса теперь накладывает Метку Космоса. Метка активируется при атаке Космическим Клинком. \
+		При срабатывании жертва возвращается в место, где была помечена, оставляя после себя космическое поле, \
+		а затем парализуется на 2 секунды."
+	gain_text = "Зверь начал шептаться со мной — редкие, обрывочные признания. \
+		Я чувствую — я должен помочь ему. Нет, я обязан."
+
+/datum/heretic_knowledge/spell/star_touch
+	name = "Star Touch"
+	desc = "Дарует способность Star Touch: накладывает звёздную метку на цель \
+		и создаёт космическое поле под вами и на соседних клетках. Если цель уже имеет метку, \
+		она засыпает на 4 секунды. При атаке помеченной цели создаётся луч, наносящий урон в течение минуты, \
+		пока его не заблокируют или пока он не найдёт новую цель."
+	gain_text = "Проснувшись в холодном поту, я почувствовал ладонь на голове - на мне выжгли знак. \
+		Мои вены теперь излучали странное фиолетовое сияние. Зверь знает - я превзойду его ожидания."
+
+
+/datum/heretic_knowledge/spell/star_blast
+	name = "Star Blast"
+	desc = "Выпускает снаряд, который движется очень медленно и оставляет за собой кратковременные космические преграды. \
+		Попадание наносит урон огнём, оглушает цель и помечает звёздной меткой всех в радиусе трёх клеток."
+	gain_text = "Зверь теперь неотступно шёл за мной — и с каждым новым подношением его одобрительный шёпот пронизывал всё моё существо!"
+
+
+/datum/heretic_knowledge/blade_upgrade/cosmic
+	name = "Cosmic Blade"
+	desc = "Теперь ваш клинок наносит урон внутренним органам через космическое излучение. \
+		Атаки наносят дополнительный урон двум предыдущим жертвам. \
+		Комбо сбрасывается, если вы не атакуете 2 секунды \
+		или попадёте по уже помеченной цели. При комбо из 4+ атак вы получаете \
+		космический след и увеличиваете время комбо до 10 секунд."
+	gain_text = "Зверь взял мои клинки в свою руку. Я опустился на колени, ощутив острую боль. \
+		Лезвия засверкали осколками былой мощи. Я рухнул на землю и рыдал у ног чудовища."
+
+/datum/heretic_knowledge/spell/cosmic_expansion
+	name = "Cosmic Expansion"
+	desc = "Дает вам Cosmic Expansion, заклинание, которое создает 3x3 область космических полей вокруг вас. \
+		Находящиеся рядом существа также получают звёздную метку."
+	gain_text = "Земля теперь дрожала подо мной. Зверь вселился в меня, и его голос опьянял."
+
 /datum/heretic_knowledge/ultimate/cosmic_final
 	name = "Creators's Gift"
-	desc = "The ascension ritual of the Path of Cosmos. \
-		Bring 3 corpses with bluespace dust in their body to a transmutation rune to complete the ritual. \
-		When completed, you become the owner of a Star Gazer. \
-		You will be able to command the Star Gazer with Alt+click. \
-		You can also give it commands through speech. \
-		The Star Gazer is a strong ally who can even break down reinforced walls. \
-		The Star Gazer has an aura that will heal you and damage opponents. \
-		Star Touch can now teleport you to the Star Gazer when activated in your hand. \
-		Your cosmic expansion spell and your blades also become greatly empowered."
-	gain_text = "The Beast held out its hand, I grabbed hold and they pulled me to them. Their body was towering, but it seemed so small and feeble after all their tales compiled in my head. \
-		I clung on to them, they would protect me, and I would protect it. \
-		I closed my eyes with my head laid against their form. I was safe. \
-		WITNESS MY ASCENSION!"
-	announcement_text = "%SPOOKY% A Star Gazer has arrived into the station, %NAME% has ascended! This station is the domain of the Cosmos! %SPOOKY%"
+	desc = "Ритуал вознесения Пути Космоса. \
+        Принеси 3 трупа с блюспейс пылью в их телах на руну транс мутации, чтобы завершить ритуал. \
+        По завершению, вы становитесь владельцем Star Gazer. \
+        Вы сможете управлять им с помощью Alt+click. \
+        Также вы сможете давать ему команды с помощью речи. \
+        Star Gazer крайне сильный союзник, ведь он может разрушить укреплённые стены. \
+        Star Gazer имеет ауру что восстановит своего владельца и навредит противникам. \
+        Star Touch может телепортировать тебя к Star Gazer после активации в руке. \
+        Ваши заклинания а также ваши клинки становятся значительно сильнее."
+	gain_text = "Зверь протянул когтистую длань, ухватившись за неё, он потянул меня за собой. Его тело возвышалось над всем, что было вокруг, но в сравнении с легендами, что были у меня в голове, он казался ничтожно мал, и таким хрупким. \
+        Я прижался к нему. Он защитит меня, а я его. \
+        Уложив голову на его шкуру, я закрыл глаза. Я был в безопасности. \
+        УЗРИТЕ ЖЕ МОЁ ВОЗНЕСЕНИЕ!"
+	announcement_text = "%SPOOKY% Сквозь пустоту, явился, Звёздный Следопыт, %NAME% был вознесён! Отныне стены этой станции чертоги Бездны! %SPOOKY%"
 	announcement_sound = 'sound/music/antag/heretic/ascend_cosmic.ogg'

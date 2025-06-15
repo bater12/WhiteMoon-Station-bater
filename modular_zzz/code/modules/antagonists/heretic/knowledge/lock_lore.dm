@@ -1,15 +1,75 @@
+
+/datum/heretic_knowledge/limited_amount/starting/base_knock
+	name = "A Steward's Secret"
+	desc = "Открывает Путь Замка. \
+		Позволяет преобразовать нож и лом в Клинок-Ключ. \
+		Можно создать только два клинка одновременно — они работают как быстрые ломы \
+		и могут носиться на поясном ремне."
+	gain_text = "Лабиринт хранит путь к свободе за своими замками. Но знают его только те, кто стал частью его стен."
+
+/datum/heretic_knowledge/lock_grasp
+	name = "Grasp of Lock"
+	desc = "Хватка Мансуса позволяет вам получить доступ к чему угодно! ПКМ по шлюзу или шкафу, \
+		чтобы взломать его. Снимает ДНК-защиту с мехов и выбрасывает пилота. Работает на консолях. \
+		При использовании издаёт характерный стук."
+	gain_text = "Моё прикосновение — ключ от всех дверей."
+
+/datum/heretic_knowledge/key_ring
+	name = "Key Keeper’s Burden"
+	desc = "Позволяет преобразовать кошелек, железный прут и ID-карту в Eldritch Card. \
+		Ударьте ей по двум шлюзам, чтобы создать пару порталов для телепортации между ними (не-еретики телепортируются случайно). \
+		trl+ЛКМ по карте инвертирует это поведение. \
+		Одна карта может создать только одну пару порталов. \
+		Внешне и функционально идентична обычной ID-карте. \
+		Атака обычной ID-картой поглощает её доступы. Использование в руке меняет её вид на карту, с которой она была слита."
+	gain_text = "Хранитель усмехнулся. \"Эти пластиковые прямоугольники — пародия на ключи, и я проклинаю каждую дверь, что требует их.\""
+
+/datum/heretic_knowledge/mark/lock_mark
+	name = "Mark of Lock"
+	desc = "Теперь Хватка Мансуса накладывает Метку Замка. \
+		Атакуйте помеченного, чтобы лишить его доступа ко всем проходам на время действия метки, \
+		даже общедоступные двери будут его отвергать."
+	gain_text = "Привратница — Смотритель, забывший долг. Её руки направляли других не к свету, а в лабиринт собственных утех"
+
+/datum/heretic_knowledge/limited_amount/concierge_rite // item that creates 3 max at a time heretic only barriers, probably should limit to 1 only, holy people can also pass
+	name = "Concierge's Rite"
+	desc = "Позволяет преобразовать мелок, деревянную доску и мультитул в Labyrinth Handbook. \
+		Оно может создавать баррикады на расстоянии, которые могут преодолеть только вы и те, кто устойчив к магии. 3 заряда."
+	gain_text = "Моё имя легло на страницу чёрными чернилами. \"Двери узнают тебя теперь .\" — сказал Консьерж, и тысячи коридоров вздохнули в ответ."
+
+/datum/heretic_knowledge/spell/burglar_finesse
+	name = "Burglar's Finesse"
+	desc = "Дарует способность Ловкость Вора — одноцелевое заклинание, \
+		которое перемещает случайный предмет из рюкзака жертвы вам в руку."
+	gain_text = "Пусть и говорят, что с ворами не стоит знаться, но как устоять перед зовом неоткрытых дверей?"
+
+/datum/heretic_knowledge/blade_upgrade/flesh/lock //basically a chance-based weeping avulsion version of the former
+	name = "Opening Blade"
+	desc = "Ваш клинок имеет шанс вызвать глубокое кровотечение при атаке."
+	gain_text = "Чужестранец с хирургическими ножами не принадлежал к хранителям дверей. Но его швы спорили с их замками на равных."
+
+/datum/heretic_knowledge/spell/caretaker_refuge
+	name = "Caretaker’s Last Refuge"
+	desc = "Даёт заклинание, делающее вас прозрачным и неосязаемым. Нельзя использовать рядом с разумными существами. \
+		В этом состоянии вы не можете использовать руки или заклинания, но неуязвимы и не замедляетесь. \
+		Нельзя атаковать. Эффект снимается при попадании антимагическим предметом."
+	gain_text = "Ревность гнала их по моим следам. Но я раскрылся, как дым на ветру — видением без формы, тенью без тела."
+
+
 /datum/heretic_knowledge/ultimate/lock_final
 	name = "Unlock the Labyrinth"
-	desc = "The ascension ritual of the Path of Knock. \
-		Bring 3 corpses without organs in their torso to a transmutation rune to complete the ritual. \
-		When completed, you gain the ability to transform into empowered eldritch creatures \
-		and your keyblades will become even deadlier. \
-		In addition, you will create a tear to the Labyrinth's heart; \
-		a tear in reality located at the site of this ritual. \
-		Eldritch creatures will endlessly pour from this rift \
-		who are bound to obey your instructions."
-	gain_text = "The Stewards guided me, and I guided them. \
-		My foes were the Locks and my blades were the Key! \
-		The Labyrinth will be Locked no more, and freedom will be ours! WITNESS US!"
-	announcement_text = "Delta-class dimensional anomaly detec%SPOOKY% Reality rended, torn. Gates open, doors open, %NAME% has ascended! Fear the tide! %SPOOKY%"
+	desc = "Ритуал вознесения Пути Замка. \
+        Принесите 3 трупа без органов на руну трансмутации для завершения ритуала. \
+        По завершению ритуала вам будет дарована возможность перевоплощается в элдрических тварей \
+        и ваши клинки станут сильнее. \
+        Кроме того, вы создадите разрыв к сердцу Лабиринта; \
+        разрыв будет находиться на месте проведения ритуала. \
+        Бесчисленное количество существ будет выходить из него, \
+        и их обязанностью будет служение вам."
+	gain_text = "Проводники обучали меня - а я обучал их. \
+		Враги мои были замками - клинки мои стали Ключами! \
+		Лабиринт более не будет скован цепями - свобода близка! УЗРИТЕ НАШЕ ПРИШЕСТВИЕ!"
+	announcement_text = "Зафиксирована аномалия класса-Дельта%SPOOKY% Реальность разорвана. Врата распахнуты, %NAME% восходит! Страшитесь волны! %SPOOKY%"
 	announcement_sound = 'sound/music/antag/heretic/ascend_knock.ogg'
+
+

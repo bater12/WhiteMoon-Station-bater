@@ -1,15 +1,75 @@
+
+/datum/heretic_knowledge/limited_amount/starting/base_flesh
+	name = "Principle of Hunger"
+	desc = "Открывает Путь Плоти. \
+		Позволяет преобразовать нож и лужу крови в Кровавый Клинок. \
+		Можно создать до 5 клинков одновременно."
+	gain_text = "Сотни из нас умерли от голода... но только не я. Я нашёл силу в своей жадности."
+	limit = 5
+
+/datum/heretic_knowledge/limited_amount/flesh_grasp
+	name = "Grasp of Flesh"
+	desc = "Хватка Мансуса теперь может создавать гулей из трупов с душой. \
+		Гули имеют 100 HP и выглядят как хаски, однако умеют использовать Кровавые Клинки. \
+		Одновременно можно контролировать только одного такого гуля."
+	gain_text = "Мои новые желания вели меня к всё большим высотам."
+
+/datum/heretic_knowledge/limited_amount/flesh_ghoul
+	name = "Imperfect Ritual"
+	desc = "Позволяет преобразовать труп и мак в Безмолвного Мертвеца. \
+		Труп не требует наличия души. \
+		Безмолвные Мертвецы — это немые гули с 135 HP, могут пользоватся Кровавыми Клинками. \
+		Можно создать до двух единиц одновременно."
+	gain_text = "Пожелтевшие страницы шептали о ритуале, который кто-то не осмелился завершить... что ж, у меня хватит решимости."
+
+/datum/heretic_knowledge/mark/flesh_mark
+	name = "Mark of Flesh"
+	desc = "Теперь Хватка Мансуса накладывает Метку Плоти. Метка активируется при атаке Кровавым Клинком, \
+		вызывая у жертвы сильное кровотечение."
+	gain_text = "Вот когда я их увидел - тех, кто был отмечен. Они находились вне пределов досягаемости. Их крики... эти бесконечные, пронзительные крики!"
+
+/datum/heretic_knowledge/spell/flesh_surgery
+	name = "Knitting of Flesh"
+	desc = "Дарует заклинание Knitting of Flesh. Позволяет извлекать органы у жертв без длительной \
+		хирургической операции. Процесс занимает больше времени, если цель жива. \
+		Также может исцелять ваших прислужников и тварей, либо восстанавливать повреждённые органы до приемлемого состояния."
+	gain_text = "Их недосягаемость длилась недолго. С каждым моим шагом их вопли становились громче... \
+		пока я не открыл способ навсегда заткнуть эти рты!"
+
+/datum/heretic_knowledge/summon/raw_prophet
+	name = "Raw Ritual"
+	desc = "Позволяет преобразовать пару глаз, левую руку и лужу крови в Raw prophet. \
+		Сырые Пророки обладают значительно увеличенным радиусом обзора и рентгеновским зрением, могут совершать дальние прыжки \
+		и связывать разумы для общения, но очень хрупки и слабы в ближнем бою."
+	gain_text = "Один я был бессилен. Тогда я призвал Жуткого Человека — и мир открылся мне! \
+		Крики, что прежде сводили меня с ума, замерли перед его уродливой формой. Теперь ничто не могло укрыться от меня!"
+
+/datum/heretic_knowledge/blade_upgrade/flesh
+	name = "Bleeding Steel"
+	desc = "Теперь Кровавый Клинок наносит сильное кровотечение при атаке."
+	gain_text = "Жуткий Человек оказался не одинок. Его спутники привели меня к Маршалу... \
+		и тогда мне открылась страшная истина. В этот момент небеса разверзлись, обрушив на землю ливень из крови!"
+
+/datum/heretic_knowledge/summon/stalker
+	name = "Lonely Ritual"
+	desc = "Позволяет преобразовать хвост любого типа, желудок, язык, ручку и лист бумаги в Сталкера. \
+		Сталкеры умеют телепортироваться, создавать ЭМИ-импульсы, превращаться в животных или автоматонов и сильны в бою."
+	gain_text = "Я сплел свою алчность и мечты воедино — и призвал неведомое доселе чудище! \
+		Бесформенная гора плоти, вечно меняющая обличья... и она понимала. Маршал кивнул в знак согласия."
+
 /datum/heretic_knowledge/ultimate/flesh_final
 	name = "Priest's Final Hymn"
-	desc = "The ascension ritual of the Path of Flesh. \
-		Bring 4 corpses to a transmutation rune to complete the ritual. \
-		When completed, you gain the ability to shed your human form \
-		and become the Lord of the Night, a supremely powerful creature. \
-		Just the act of transforming causes nearby heathens great fear and trauma. \
-		While in the Lord of the Night form, you can consume arms to heal and regain segments. \
-		Additionally, you can summon three times as many Ghouls and Voiceless Dead, \
-		and can create unlimited blades to arm them all."
-	gain_text = "With the Marshal's knowledge, my power had peaked. The throne was open to claim. \
-		Men of this world, hear me, for the time has come! The Marshal guides my army! \
-		Reality will bend to THE LORD OF THE NIGHT or be unraveled! WITNESS MY ASCENSION!"
+	desc = "Ритуал вознесения Пути Плоти. \
+        Принесите 4 трупа на руну транс мутации для завершения ритуала. \
+        По завершению ритуала вы получите возможность освободится от человеческой формы \
+        и стать Властителем Ночи, невероятно могущественным существом. \
+        Обычное превращение в существо вызывает у ближайших язычников вызывает травму и не преодолимый страх. \
+        Находясь в форме Властителя Ночи, вы можете поглощать руки для восстановления своих сегментов. \
+        Кроме того, вы способны вызвать в три раза больше гулей, и безголосых мертвецов, \
+        так-же вы можете создать бесконечное количество лезвий чтобы вооружить свою армию."
+	gain_text = "Вместе с мудростью Маршала, моя мощь достигла предела. Трон ждёт своего владыку. \
+        Люди этого мира, услышьте меня - ибо час пробил! Маршал ведёт мою армию! \
+        Реальность склонится перед Властителем Ночи... ИЛИ БУДЕТ РАЗОРВАНА В КЛОЧЬЯ! УЗРИТЕ МОЁ ВОСХОЖДЕНИЕ"
 	announcement_text = "%SPOOKY% Ever coiling vortex. Reality unfolded. ARMS OUTREACHED, THE LORD OF THE NIGHT, %NAME% has ascended! Fear the ever twisting hand! %SPOOKY%"
 	announcement_sound = 'modular_zzz/sounds/heretic/flesh_lore.ogg'
+

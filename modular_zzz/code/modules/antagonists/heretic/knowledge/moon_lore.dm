@@ -1,13 +1,67 @@
+
+/datum/heretic_knowledge/limited_amount/starting/base_moon
+	name = "Moonlight Troupe"
+	desc = "Открывает Путь Луны. \
+		Позволяет преобразовать 2 железных листа и нож в Лунный Клинок. \
+		Можно создать только два клинка одновременно."
+	gain_text = "Под светом луны звенит смех, не знающий начала, не ведающий конца"
+
+/datum/heretic_knowledge/moon_grasp
+	name = "Grasp of Lunacy"
+	desc = "Хватка Мансуса заставляет жертв видеть всех как лунные существа \
+		и скрывает вашу личность на короткое время."
+	gain_text = "Серебряные актёры лунного театра показали мне лик истины - и я прижал его к груди."
+
+/datum/heretic_knowledge/spell/moon_smile
+	name = "Smile of the moon"
+	desc = "Дарует заклинание Лунная Улыбка — дальнобойное, которое оглушает, ослепляет, лишает речи\
+		и сбивает с ног цель на время, зависящее от её рассудка."
+	gain_text = "Луна усмехается в ночи. Те же, кто познал её истинное лицо... они теперь разносят эту 'радость' дальше"
+
+/datum/heretic_knowledge/mark/moon_mark
+	name = "Mark of Moon"
+	desc = "Теперь Хватка Мансуса накладывает Метку Луны, которая не дает атаковать жертве до первого полученого ей удара. \
+		Метка также активируется при атаке Лунным Клинком, вызывая у цели состояние замешательства."
+	gain_text = "Лунная труппа танцевала весь день, \
+		и в этом танце луна улыбалась нам. \
+		Но с наступлением ночи её улыбка тускнела, вынужденная взирать на землю."
+
+/datum/heretic_knowledge/spell/moon_parade
+	name = "Lunar Parade"
+	desc = "Дарует заклинание Lunar Parade — после краткой задержки отправляет вперёд карнавальное шествие. \
+		Те, кого оно задевает, присоединяются к параду и будут страдать от галлюцинаций."
+	gain_text = "Эта музыка - зеркало самых потаённых уголков души! Они шли за ней, как одержимые, как ночные бабочки на огонь - без раздумий, без сомнений!"
+
+/datum/heretic_knowledge/moon_amulet
+	name = "Moonlight Amulet"
+	desc = "Позволяет преобразовать 2 стеклянных листа, сердце и галстук в Moonlight Amulet. \
+			При использовании на цель с низким рассудком — вызывает состояние берсерк (атака всех вокруг). \
+			Если рассудок недостаточно низок — ухудшает настроение цели."
+	gain_text = "Он возглавлял шествие — сама луна, сжатая в плотную сущность, живое зеркало человеческой души!"
+
+/datum/heretic_knowledge/blade_upgrade/moon
+	name = "Moonlight Blade"
+	desc = "Теперь ваше лезвие наносит повреждения мозгу, вызывает случайные галлюцинации и урон рассудку."
+	gain_text = "Его острый ум, будто отточенный клинок, вскрывал ложь за ложью - и в этом освобождении от обмана рождалась наша радость!"
+
+/datum/heretic_knowledge/spell/moon_ringleader
+	name = "Ringleaders Rise"
+	desc = "Дарует заклинание Восстание Заводилы — область действия, наносящее урон рассудку (чем ниже уровень рассудка целей, тем сильнее урон) \
+			и вызывающее галлюцинации (также усиливающиеся при низком рассудке). \
+			Если рассудок цели критически низок — она сходит с ума, после чего её рассудок уменьшается вдвое."
+	gain_text = "Я вцепился в его руку — и мы воспарили! Вслед за нами поднялись все, кто не боялся смотреть правде в глаза. \
+		Тогда Заводила воздел палец к небу, и скупой свет истины осветил наш путь!"
+
 /datum/heretic_knowledge/ultimate/moon_final
 	name = "The Last Act"
-	desc = "The ascension ritual of the Path of Moon. \
-		Bring 3 corpses with more than 50 brain damage to a transmutation rune to complete the ritual. \
-		When completed, you become a harbinger of madness gaining and aura of passive sanity decrease, \
-		confusion increase and, if their sanity is low enough, brain damage and blindness. \
-		1/5th of the crew will turn into acolytes and follow your command, they will all receive moonlight amulets."
-	gain_text = "We dived down towards the crowd, his soul splitting off in search of greater venture \
-		for where the Ringleader had started the parade, I shall continue it unto the suns demise \
-		WITNESS MY ASCENSION, THE MOON SMILES ONCE MORE AND FOREVER MORE IT SHALL!"
-	announcement_text = "%SPOOKY% Laugh, for the ringleader %NAME% has ascended! \
-						The truth shall finally devour the lie! %SPOOKY%"
+	desc = "Ритуал вознесения Лунного Пути. \
+        Принесите 3 трупа с повреждением мозга более 50 единиц на руну трансмутации дабы завершить ритуал \
+        По завершению, вы становитесь предвестником безумия и получаете ауру что сводит с ума язычников, \
+        ухудшение настроения усиливается, и если их состояния достаточно низкое они получают повреждения мозга и слепоту. \
+        Так-же 1/5 экипажа превращается в ваших аколитов и следуют вашим командам получая moonlight amulet."
+	gain_text = "Мы спустились вниз, к ликующей толпе, его дух распадался на части, жаждая новых свершений \
+        ибо там, где Кукловод начал свой парад, он не закончится никогда - до самого заката солнц! \
+        УЗРИ МОЁ ВОСХОЖДЕНИЕ! ЛУНА ВНОВЬ УЛЫБАЕТСЯ - И ОТНЫНЕ ЕЁ УЛЫБКА ВЕЧНА!"
+	announcement_text = "%SPOOKY% СМЕЙТЕСЬ, ВЕСЕЛИТЕСЬ, ибо Повелитель Карнавала %NAME%, ПРОБУДИЛСЯ! \
+						Теперь иллюзии будут гореть в его цирковом огне! %SPOOKY%"
 	announcement_sound = 'sound/music/antag/heretic/ascend_moon.ogg'
