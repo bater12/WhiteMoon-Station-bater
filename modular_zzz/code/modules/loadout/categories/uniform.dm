@@ -37,3 +37,9 @@
 	name = "AC Casual Skirt"
 	item_path = /obj/item/clothing/under/rank/security/officer/ac/ac_casski
 	restricted_roles = list(ALL_JOBS_SEC)
+
+/datum/loadout_item/uniform/security/officer/acradorsuit
+	name = "Underarmor suit"
+	item_path = /obj/item/clothing/under/rank/security/officer/acradorsuit
+	restricted_roles = list(ALL_JOBS_SEC)
+	ckeywhitelist = list("someoldvg", "enigma418", "flippingtable", "allazarius", "trora", "siamant", "mihana964", "wangig", "omantis", "sc1de", "kladmenuwu", "manafluff", "hardbass228", "flaffug")

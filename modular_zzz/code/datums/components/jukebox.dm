@@ -253,6 +253,7 @@
 		active_song_sound.volume = volume * (pref_volume/100)
 		active_song_sound.y = 1
 		active_song_sound.environment = juke_area.sound_environment || SOUND_ENVIRONMENT_NONE
+		active_song_sound.repeat = sound_loops
 
 	update_listener(new_listener)
 	// if you have a sound with status SOUND_UPDATE,
@@ -340,7 +341,7 @@
 /datum/jukebox/proc/update_listener(mob/listener)
 	PROTECTED_PROC(TRUE)
 
-	active_song_sound.status = listeners[listener] || NONE
+	active_song_sound?.status = listeners[listener] || NONE
 
 	var/turf/sound_turf = get_turf(parent)
 	var/turf/listener_turf = get_turf(listener)

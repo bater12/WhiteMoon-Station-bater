@@ -109,6 +109,24 @@
 	held_lh = 'modular_zzz/icons/mob/inhands/pets/pets_held_lh.dmi'
 	held_rh = 'modular_zzz/icons/mob/inhands/pets/pets_held_rh.dmi'
 
+/mob/living/basic/pet/fox/renault/space_aiko
+	name = "CentCom Aiko"
+	desc = "Айко. Одетая в МОД офицерского состава Центрального Командования Nanotrasen Айко. Однозначно точно высокопоставленная шишка."
+	icon_state = "cm_aiko"
+	icon_living = "cm_aiko"
+	icon_dead = "cm_aiko_dead"
+	held_state = "cm_aiko"
+	see_in_dark = 10
+	gender = FEMALE
+	unsuitable_atmos_damage = 0
+	minimum_survivable_temperature = TCMB
+	maximum_survivable_temperature = T0C + 40
+	worn_slot_flags = ITEM_SLOT_HEAD
+	icon = 'modular_zzz/icons/mob/simple/pets.dmi'
+	held_lh = 'modular_zzz/icons/mob/inhands/pets/pets_held_lh.dmi'
+	held_rh = 'modular_zzz/icons/mob/inhands/pets/pets_held_rh.dmi'
+	head_icon = 'modular_zzz/icons/mob/pets_head.dmi'
+
 /mob/living/basic/pet/cat/jruttie
 	name = "Jruttie"
 	desc = "A grey magical cat, full of funnies."

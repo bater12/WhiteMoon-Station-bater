@@ -315,10 +315,8 @@
 	lock_other_purchases = TRUE
 	cant_discount = TRUE
 	item = /obj/item/his_grace
-	 // WHITEMOON EDIT START
 	population_minimum = TRAITOR_POPULATION_LOWPOP
 	cost = 25
-	// WHITEMOON EDIT END
 	surplus = 0
 	restricted_roles = list(JOB_CHAPLAIN)
 	purchasable_from = ~UPLINK_SPY

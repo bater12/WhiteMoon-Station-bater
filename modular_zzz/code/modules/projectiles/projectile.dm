@@ -12,3 +12,6 @@
 
 /obj/projectile/bullet/c980grenade
 	speed = 1
+
+/obj/projectile/magic/aoe/juggernaut
+	speed = 0.3

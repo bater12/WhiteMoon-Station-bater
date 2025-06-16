@@ -12,6 +12,7 @@
 /obj/item/gun/ballistic/automatic/ar/ak12/pink
 	name = "\improper Pink AK-12 rifle"
 	icon_state = "akr12"
+	inhand_icon_state = "akr12"
 
 /obj/item/gun/ballistic/automatic/ar/ak12/pink/fire_sounds()
 	fire_sound = pick('modular_zzplurt/sound/interactions/moan_m0.ogg', 'modular_zzplurt/sound/interactions/moan_m4.ogg', \
