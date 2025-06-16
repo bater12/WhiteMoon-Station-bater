@@ -176,14 +176,6 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/poly, 32)
 
 MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/fox, 32)
 
-/obj/structure/sign/poster/contraband/panties
-	name = "Panties"
-	desc = "This lewd poster depicts a half-naked vulpkanin."
-	icon_state = "panties"
-	icon = 'modular_zzz/icons/obj/poster.dmi'
-
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/panties, 32)
-
 /obj/structure/sign/poster/contraband/stockings
 	name = "Stockings"
 	desc = "A poster advertising the Vulp's Secret new collection of underwear."
@@ -191,14 +183,6 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/panties, 32)
 	icon = 'modular_zzz/icons/obj/poster.dmi'
 
 MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/stockings, 32)
-
-/obj/structure/sign/poster/contraband/paws
-	name = "Paws"
-	desc = "This lewd poster depicts a vulpkanine preparing to mate."
-	icon_state = "paws"
-	icon = 'modular_zzz/icons/obj/poster.dmi'
-
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/paws, 32)
 
 /obj/structure/sign/poster/contraband/dancing_honk
 	name = "DANCE"
@@ -232,22 +216,6 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/woof, 32)
 
 MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/slep, 32)
 
-/obj/structure/sign/poster/contraband/vulp1
-	name = "Vulpes"
-	desc = "Looks like an advertisement for movie about vulpkanins."
-	icon_state = "poster_vulp1"
-	icon = 'modular_zzz/icons/obj/poster.dmi'
-
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/vulp1, 32)
-
-/obj/structure/sign/poster/contraband/vulp2
-	name = "Vulp Beer"
-	desc = "This poster says: 'Vulpes, Boobs and Beer!'. Probably a new Space Beer advertising company."
-	icon_state = "poster_vulp2"
-	icon = 'modular_zzz/icons/obj/poster.dmi'
-
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/vulp2, 32)
-
 /obj/structure/sign/poster/contraband/vulp3
 	name = "Vulp Medical"
 	desc = "White vulpkanin on the background of a green cross, one of the interplanetary symbol of health and aid."
@@ -256,14 +224,6 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/vulp2, 32)
 
 MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/vulp3, 32)
 
-/obj/structure/sign/poster/contraband/vulp4
-	name = "White Wolf Aiko"
-	desc = "Белоснежная вульпиниха в тёмных стрингах. Присмотревшись, вы обнаружили цену в Девятьсот Тысяч Кредитов на Универсального Клона Айко."
-	icon_state = "poster_vulp4"
-	icon = 'modular_zzz/icons/obj/poster.dmi'
-
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/vulp4, 32)
-
 /obj/structure/sign/poster/contraband/vulp5
 	name = "Vulptide"
 	desc = "A rebellious poster symbolizing vulpkanins and assistants solidarity."
@@ -271,14 +231,6 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/vulp4, 32)
 	icon = 'modular_zzz/icons/obj/poster.dmi'
 
 MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/vulp5, 32)
-
-/obj/structure/sign/poster/contraband/vulp6
-	name = "Vulp Hacking Guide"
-	desc = "This poster shows a vulp hacking the airlock somewhere in technical tunnels."
-	icon_state = "poster_vulp6"
-	icon = 'modular_zzz/icons/obj/poster.dmi'
-
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/vulp6, 32)
 
 /obj/structure/sign/poster/contraband/vulp7
 	name = "Syndie Vulp"
