@@ -1,6 +1,6 @@
 /datum/quirk/prosthetic_limb
-	name = "Протез конечности"
-	desc = "В результате несчастного случая вы потеряли одну из конечностей. Из-за этого у вас теперь есть протез!"
+	name = "Prosthetic Limb"
+	desc = "An accident caused you to lose one of your limbs. Because of this, you now have a surplus prosthetic!"
 	icon = "tg-prosthetic-leg"
 	value = -3
 	hardcore_value = 3
@@ -10,7 +10,7 @@
 	var/slot_string = "limb"
 	/// The slot to replace, in GLOB.limb_zones (both arms and both legs)
 	var/limb_zone
-
+	
 
 /datum/quirk_constant_data/prosthetic_limb
 	associated_typepath = /datum/quirk/prosthetic_limb
@@ -26,12 +26,12 @@
 	var/obj/item/bodypart/surplus = new limb_type()
 	slot_string = "[surplus.plaintext_zone]"
 
-	medical_record_text = "Пациент использует малобюджетный протез [slot_string]."
+	medical_record_text = "Patient uses a low-budget prosthetic on the [slot_string]."
 	human_holder.del_and_replace_bodypart(surplus, special = TRUE)
 
 /datum/quirk/prosthetic_limb/post_add()
-	to_chat(quirk_holder, span_bolddanger("Ваша [slot_string] была заменена протезом. Он почти не имеет мышечной силы и делает вас слабее просто потому, что он у вас есть. Кроме того, \
-вам нужно использовать сварочный инструмент и кабели для его ремонта вместо швов и регенеративных сеток."))
+	to_chat(quirk_holder, span_bolddanger("Your [slot_string] has been replaced with a surplus prosthetic. It has almost no muscle force, and makes you unhealthier by just having it. Additionally, \
+	you need to use a welding tool and cables to repair it, instead of sutures and regenerative meshes."))
 
 /datum/quirk/prosthetic_limb/remove()
 	var/mob/living/carbon/human/human_holder = quirk_holder

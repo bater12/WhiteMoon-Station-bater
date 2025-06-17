@@ -1,11 +1,11 @@
 /datum/quirk/glass_jaw
-	name = "Стеклянная челюсть"
-	desc = "У тебя очень хрупкая челюсть. Любой достаточно сильный удар по голове может тебя вырубить."
+	name = "Glass Jaw"
+	desc = "You have a very fragile jaw. Any sufficiently hard blow to your head might knock you out."
 	icon = FA_ICON_HAND_FIST
 	value = -4
-	gain_text = span_danger("Ваша челюсть стала сильно чувствительнее.")
-	lose_text = span_notice("Чувствительность вашей челюсти вернулась в норму.")
-	medical_record_text = "Пациента до смешного легко вырубить. Не подпускайте его к боксерскому рингу."
+	gain_text = span_danger("Your jaw feels loose.")
+	lose_text = span_notice("Your jaw feels fitting again.")
+	medical_record_text = "Patient is absurdly easy to knock out. Do not allow them near a boxing ring."
 	hardcore_value = 4
 	mail_goodies = list(
 		/obj/item/clothing/gloves/boxing,
@@ -47,8 +47,8 @@
 		//don't display the message if little mac is already KO'd
 		if(!source.IsUnconscious())
 			source.visible_message(
-				span_warning("[source] вырубается!"),
-				span_userdanger("Вас вырубили."),
+				span_warning("[source] gets knocked out!"),
+				span_userdanger("You get knocked out!"),
 				vision_distance = COMBAT_MESSAGE_RANGE,
 		)
 		source.Unconscious(3 SECONDS)
