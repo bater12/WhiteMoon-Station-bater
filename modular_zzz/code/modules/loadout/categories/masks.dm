@@ -37,3 +37,8 @@
 	name = "Third tactical combat Catcrin gasmask"
 	item_path = /obj/item/clothing/mask/gas/syndicate/cool_version/catcrin_combatmask_three
 	ckeywhitelist = list("oni3288", "ghos7ik", "discord980", "mihana964", "romontesque", "enigma418", "smol42", "notlikeluls",  "kladmenuwu", "alexsandoor", "scramblescream", "nai1ten", "devildeadspace", "zetneskov", "hazzi", "definitelynotnesuby", "silverfoxpaws", "pr1zrak", "earthphobia", "wafflemeow", "trora", "kosep", "urfdrf", "mikolaostavkin", "xaeshkavd", "deltarayx", "korinfellori", "troubleneko17th", "dimofon", "lichfail", "gisya", "dimakr", "cupteazee", "nopeingeneer", "silyamg", "lomodno", "goodmankekw", "junejuly", "ralseidreemuurr")
+
+/datum/loadout_item/mask/mtb
+	name = "Monocular Tactical Balaclava"
+	item_path = /obj/item/clothing/mask/gas/syndicate/mtb
+	ckeywhitelist = list("hellsinggc")
