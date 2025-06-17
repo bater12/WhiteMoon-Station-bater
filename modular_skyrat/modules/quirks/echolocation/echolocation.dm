@@ -1,12 +1,12 @@
 /datum/quirk/echolocation
-	name = "Echolocation"
-	desc = "Though your eyes no longer function, you accommodate for it by some means of extrasensory echolocation and sensitive hearing. Beware: if you're ever deafened, you'll also lose your echolocation until you recover!"
-	gain_text = span_notice("The slightest sounds map your surroundings.")
-	lose_text = span_notice("The world resolves into colour and clarity.")
+	name = "Эхолокация"
+	desc = "Хотя ваши глаза больше не функционируют, вы приспосабливаетесь к этому с помощью некоторых средств экстрасенсорной эхолокации и чувствительного слуха. Будьте осторожны: если вы когда-нибудь оглохнете, вы также потеряете свою эхолокацию, пока не поправитесь!"
+	gain_text = span_notice("Малейшие звуки создают карту вашего окружения.")
+	lose_text = span_notice("Мир снова наполнен яркими красками")
 	value = -14
 	icon = FA_ICON_EAR_LISTEN
 	mob_trait = TRAIT_GOOD_HEARING
-	medical_record_text = "Patient's eyes are biologically nonfunctional. Hearing tests indicate almost supernatural acuity."
+	medical_record_text = "Глаза пациента биологически нефункциональны. Тесты на слух показывают почти сверхъестественную остроту."
 	quirk_flags = QUIRK_HUMAN_ONLY|QUIRK_CHANGES_APPEARANCE
 	mail_goodies = list(/obj/item/clothing/glasses/sunglasses, /obj/item/cane/white)
 	/// where we store easy access to the character's echolocation component (for stuff like drugs)
@@ -68,7 +68,7 @@
 
 	if(quirk_esp.stall == TRUE)
 		return
-	examine_list += span_cyan("[human_holder.p_They()] [human_holder.p_have()] [human_holder.p_their()] ears perked up, listening closely to even slightest noise.")
+	examine_list += span_cyan("[human_holder.p_They()] [human_holder.p_have()] [human_holder.p_their()] уши навострились, внимательно прислушиваясь даже к малейшему шуму.")
 
 /datum/client_colour/echolocation_custom
 	color = COLOR_MATRIX_SEPIATONE
@@ -76,8 +76,8 @@
 	override = TRUE
 
 /datum/action/cooldown/spell/echolocation_toggle
-	name = "Toggle echolocation"
-	desc = "Decide whether you want to stop echolocating (or start again). Useful if you need a break - it's not an easy process!"
+	name = "Включить эхолокацию"
+	desc = "Решите, хотите ли вы прекратить эхолокацию (или начать снова). Полезно, если вам нужен перерыв — это нелегкий процесс!"
 	spell_requirements = NONE
 	cooldown_time = 2 SECONDS
 	check_flags = AB_CHECK_CONSCIOUS
@@ -98,9 +98,9 @@
 
 	if (quirk_esp.stall)
 		quirk_esp.stall = FALSE
-		cast_on.balloon_alert(cast_on, "started echolocating!")
-		cast_on.visible_message(span_notice("[cast_on] perks up, suddenly seeming more vigilant!"))
+		cast_on.balloon_alert(cast_on, "Старт эхолокации!")
+		cast_on.visible_message(span_notice("[cast_on] оживляется, внезапно становясь более бдительным!"))
 	else
 		quirk_esp.stall = TRUE
-		cast_on.balloon_alert(cast_on, "stopped echolocating!")
-		cast_on.visible_message(span_notice("[cast_on] relaxes slightly, seeming less vigilant for the moment."))
+		cast_on.balloon_alert(cast_on, "Остановка эхолокации!")
+		cast_on.visible_message(span_notice("[cast_on] слегка расслабляется, на мгновение становясь менее бдительным."))

@@ -1,9 +1,9 @@
 /datum/quirk/clumsy
-	name = "Clumsy"
-	desc = "You're clumsy, a goofball, a silly dude. You big loveable himbo/bimbo you! Hope you weren't planning on using your hands for anything that takes even a LICK of dexterity."
+	name = "Неуклюжий"
+	desc = "Вы неуклюжи и неловки. Ваши движения максимально неуверенные."
 	icon = FA_ICON_FACE_DIZZY
 	value = -8
 	mob_trait = TRAIT_CLUMSY
-	gain_text = span_danger("You feel your IQ sink like your brain is liquid.")
-	lose_text = span_notice("You feel like your IQ went up to at least average.")
-	medical_record_text = "Patient has demonstrated an extreme difficulty with high motor skill paired with an inability to demonstrate critical thinking."
+	gain_text = span_danger("Вы чувствуете как ваш мозг не в состоянии передавать чёткие сигналы к вашим конечностям.")
+	lose_text = span_notice("Вы чувствуете как ваш мозг снова может чётко контролировать тело.")
+	medical_record_text = "Пациент имеет нарушение в высших двигательных функциях."

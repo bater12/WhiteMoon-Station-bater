@@ -1,10 +1,10 @@
 /datum/quirk/thirsty
-	name = "Thirsty"
-	desc = "You become thirsty twice as quickly. Make sure to drink plenty of fluids!"
+	name = "Жажда"
+	desc = "Вы начинаете чувствовать жажду в два раза быстрее. Обязательно пейте много жидкости!"
 	value = -2
-	gain_text = span_danger("You're beginning to feel parched again.")
-	lose_text = span_notice("Your elevated craving for water begins dying down.")
-	medical_record_text = "Patient's body is half as effective at retaining liquids, necessitating drinking twice as many liquids per day than usual for their species."
+	gain_text = span_danger("Вы чувствуете недостаток жидкости.")
+	lose_text = span_notice("Ваш водный баланс вернулся в норму")
+	medical_record_text = "Организм пациента в два раза менее эффективен в плане удержания жидкости, что требует выпивания в два раза большего количества жидкости в день, чем обычно для его вида."
 	mob_trait = TRAIT_THIRSTY
 	hardcore_value = 1
 	icon = FA_ICON_GLASS_WATER

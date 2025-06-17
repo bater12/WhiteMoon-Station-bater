@@ -1,11 +1,11 @@
 /datum/quirk/paraplegic
-	name = "Paraplegic"
-	desc = "Your legs do not function. Nothing will ever fix this. But hey, free wheelchair!"
+	name = "парализованный"
+	desc = "Ваши ноги не функционируют. Ничто не исправит это. Но, эй, бесплатная инвалидная коляска!"
 	icon = FA_ICON_WHEELCHAIR
 	value = -12
 	gain_text = null // Handled by trauma.
 	lose_text = null
-	medical_record_text = "Patient has an untreatable impairment in motor function in the lower extremities."
+	medical_record_text = "У пациента наблюдается не поддающееся лечению нарушение двигательной функции нижних конечностей."
 	hardcore_value = 15
 	mail_goodies = list(/obj/vehicle/ridden/wheelchair/motorized) //yes a fullsized unfolded motorized wheelchair does fit
 
