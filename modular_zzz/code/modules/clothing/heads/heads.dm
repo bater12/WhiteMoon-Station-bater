@@ -23,3 +23,12 @@
 	worn_icon = 'modular_zzz/icons/mob/clothing/heads_32x48.dmi'
 	worn_icon_digi = 'modular_zzz/icons/mob/clothing/heads_32x48.dmi'
 	flags_inv = HIDEHAIR|HIDEEARS|HIDEFACIALHAIR
+
+/obj/item/clothing/head/helmet/sec/aegis
+	name = "AEGIS-X Tactical Helmet"
+	desc = "A faceless sentinel of Nanotrasen’s most ruthless enforcers, the AEGIS-X helmet is less a piece of armor and more a herald of impending compliance. Its opaque, expressionless visor pulses with an eerie blue glow as internal scanners relentlessly track movement, vitals, and even vocal stress patterns—feeding live data directly to the wearer’s HUD."
+	icon_state = "aegis"
+	icon = 'modular_zzz/icons/obj/clothing/heads.dmi'
+	worn_icon = 'modular_zzz/icons/mob/clothing/heads.dmi'
+	worn_icon_digi = 'modular_zzz/icons/mob/clothing/heads.dmi'
+	flags_inv = HIDEHAIR|HIDEEARS|HIDEFACIALHAIR|HIDESNOUT

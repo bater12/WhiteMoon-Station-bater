@@ -43,3 +43,15 @@
 	item_path = /obj/item/clothing/under/rank/security/officer/acradorsuit
 	restricted_roles = list(ALL_JOBS_SEC)
 	ckeywhitelist = list("someoldvg", "enigma418", "flippingtable", "allazarius", "trora", "siamant", "mihana964", "wangig", "omantis", "sc1de", "kladmenuwu", "manafluff", "hardbass228", "flaffug")
+
+/datum/loadout_item/uniform/security/officer/ecu_1
+	name = "Elite Combat Uniform"
+	item_path = /obj/item/clothing/under/rank/security/officer/ecu_1
+	restricted_roles = list(ALL_JOBS_SEC)
+	ckeywhitelist = list("hellsinggc")
+
+/datum/loadout_item/uniform/security/officer/ecu_2
+	name = "Elite Combat Uniform"
+	item_path = /obj/item/clothing/under/rank/security/officer/ecu_2
+	restricted_roles = list(ALL_JOBS_SEC)
+	ckeywhitelist = list("hellsinggc")

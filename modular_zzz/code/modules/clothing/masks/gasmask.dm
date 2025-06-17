@@ -74,3 +74,8 @@
 	name = "Tactical combat Catcrin gasmask"
 	desc = "Gasmask with special visor and filters that typicaly used in the Catcrin army."
 	icon_state = "catcrin_three"
+
+/obj/item/clothing/mask/gas/syndicate/mtb
+	name = "Monocular Tactical Balaclava"
+	desc = "A sinister, one-eyed balaclava designed for Nanotrasen's black-ops operatives and elite riot control specialists. This unnerving mask obscures all facial features except for a single, red blinking eye — enhanced with an unknown-type monocle. Whether you're lurking in maintenance, conducting midnight deitys, or just trying to psychologically unnerve the clown, this mask ensures you see everything... while remaining a faceless enigma of papa Nanotrasen."
+	icon_state = "mtb"

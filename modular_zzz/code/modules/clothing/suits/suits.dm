@@ -24,3 +24,11 @@
 	worn_icon = 'modular_zzz/icons/mob/clothing/suits.dmi'
 	worn_icon_digi = 'modular_zzz/icons/mob/clothing/suits.dmi'
 	icon_state = "rsa12"
+
+/obj/item/clothing/suit/armor/rohai_armor
+	name = "Rohai Infantry Armor"
+	desc = "Standard protective set of infantryman of the Rohai Empire, made of polymers, usually tightly adjusted to its owner. On both shoulder pads you can see a symbol with two knives."
+	icon = 'modular_zzz/icons/obj/clothing/suits.dmi'
+	worn_icon = 'modular_zzz/icons/mob/clothing/suits.dmi'
+	worn_icon_digi = 'modular_zzz/icons/mob/clothing/suits.dmi'
+	icon_state = "rohai_armor"
