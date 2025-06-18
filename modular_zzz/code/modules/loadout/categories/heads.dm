@@ -82,3 +82,9 @@
 	item_path = /obj/item/clothing/head/helmet/sec/rhsa12
 	restricted_roles = list(ALL_JOBS_SEC)
 	ckeywhitelist = list("someoldvg", "enigma418", "flippingtable", "allazarius", "trora", "siamant", "mihana964", "wangig", "omantis", "sc1de", "kladmenuwu", "manafluff", "hardbass228", "flaffug")
+
+/datum/loadout_item/head/helmet/sec/aegis
+	name = "AEGIS-X Tactical Helmet"
+	item_path = /obj/item/clothing/head/helmet/sec/aegis
+	restricted_roles = list(ALL_JOBS_SEC)
+	ckeywhitelist = list("hellsinggc")
