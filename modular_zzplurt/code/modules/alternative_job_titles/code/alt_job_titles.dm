@@ -5,7 +5,6 @@
 		"Station Overseer",
 		"Station Mistress",
 		"Station Master",
-		"Cuntpitain",
 		"Senator",
 		"Consul",
 		"Ark Commander"
