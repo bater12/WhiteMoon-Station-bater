@@ -34,7 +34,7 @@
 		"earliest_start": 6000
 	},
 	"Disease Outbreak: Classic": {
-		"min_players": 10,
+		"min_players": 20,
 		"weight": 5
 	},
 	"Disease Outbreak: Advanced": {
@@ -48,12 +48,12 @@
 		"earliest_start": 0
 	},
 	"Electrical Storm": {
-		"min_players": 5,
+		"min_players": 20,
 		"weight": 20,
 		"earliest_start": 6000
 	},
 	"Fake Virus": {
-		"min_players": 0,
+		"min_players": 20,
 		"weight": 20
 	},
 	"False Alarm": {
@@ -61,7 +61,7 @@
 		"weight": 20
 	},
 	"Gravity Generator Blackout": {
-		"min_players": 0,
+		"min_players": 20,
 		"weight": 30
 	},
 	"Grey Tide": {
@@ -77,7 +77,7 @@
 		"weight": 20
 	},
 	"Ion Storm": {
-		"min_players": 2,
+		"min_players": 20,
 		"weight": 15
 	},
 	"Market Crash": {
@@ -106,11 +106,11 @@
 		"weight": 15
 	},
 	"Radiation Leak": {
-		"min_players": 0,
+		"min_players": 15,
 		"weight": 15
 	},
 	"Radiation Storm": {
-		"min_players": 0,
+		"min_players": 15,
 		"weight": 10
 	},
 	"Sandstorm: Directional": {
@@ -164,7 +164,7 @@
 		"earliest_start": 18000
 	},
 	"Supermatter Surge": {
-		"min_players": 0,
+		"min_players": 20,
 		"weight": 15
 	},
 	"Supermatter Surge: Poly's Revenge": {
@@ -205,19 +205,19 @@
 		"weight": 1
 	},
 	"Anomaly: Energetic Flux": {
-		"min_players": 1,
+		"min_players": 20,
 		"weight": 15
 	},
 	"Anomaly: Bioscrambler": {
-		"min_players": 10,
+		"min_players": 20,
 		"weight": 20
 	},
 	"Anomaly: Bluespace": {
-		"min_players": 1,
+		"min_players": 20,
 		"weight": 15
 	},
 	"Anomaly: Dimensional": {
-		"min_players": 10,
+		"min_players": 20,
 		"weight": 20
 	},
 	"Anomaly: Ectoplasmic Outburst": {
@@ -225,23 +225,23 @@
 		"weight": 4
 	},
 	"Anomaly: Hyper-Energetic Flux": {
-		"min_players": 10,
+		"min_players": 20,
 		"weight": 20
 	},
 	"Anomaly: Gravitational": {
-		"min_players": 1,
+		"min_players": 20,
 		"weight": 25
 	},
 	"Anomaly: Gravitational (High Intensity)": {
-		"min_players": 1,
+		"min_players": 20,
 		"weight": 15
 	},
 	"Anomaly: Hallucination": {
-		"min_players": 10,
+		"min_players": 20,
 		"weight": 20
 	},
 	"Anomaly: Pyroclastic": {
-		"min_players": 1,
+		"min_players": 20,
 		"weight": 20
 	},
 	"Anomaly: Vortex": {
@@ -253,7 +253,7 @@
 		"weight": 10
 	},
 	"Alien Infestation": {
-		"min_players": 10,
+		"min_players": 20,
 		"weight": 5
 	},
 	"Blob": {
@@ -307,7 +307,7 @@
 		"weight": 10
 	},
 	"Immovable Rod": {
-		"min_players": 15,
+		"min_players": 20,
 		"weight": 10
 	},
 	"Dark Matt-eor": {
@@ -349,7 +349,7 @@
 		"earliest_start": 4200
 	},
 	"Space Vines": {
-		"min_players": 10,
+		"min_players": 20,
 		"weight": 15
 	}
 }
