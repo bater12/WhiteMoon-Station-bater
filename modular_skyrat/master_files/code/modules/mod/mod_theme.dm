@@ -113,10 +113,10 @@
 	wound = 15
 
 /datum/mod_theme/security // Security Officer
-	default_skin = "security_blue"
+	default_skin = "security"
 	armor_type = /datum/armor/mod_theme_security
 	variants = list(
-		"security" = list(
+		"redsec" = list(
 			/obj/item/clothing/head/mod = list(
 				UNSEALED_CLOTHING = SNUG_FIT|THICKMATERIAL,
 				SEALED_CLOTHING = STOPSPRESSUREDAMAGE|HEADINTERNALS,
@@ -149,9 +149,7 @@
 				SEALED_MESSAGE = BOOT_SEAL_MESSAGE,
 			),
 		),
-		"security_blue" = list(
-			MOD_ICON_OVERRIDE = 'modular_skyrat/master_files/icons/obj/clothing/modsuit/mod_clothing.dmi',
-			MOD_WORN_ICON_OVERRIDE = 'modular_skyrat/master_files/icons/mob/clothing/modsuit/mod_clothing.dmi',
+		"security" = list(
 			/obj/item/clothing/head/mod = list(
 				UNSEALED_CLOTHING = SNUG_FIT|THICKMATERIAL,
 				SEALED_CLOTHING = STOPSPRESSUREDAMAGE|HEADINTERNALS,

@@ -1,0 +1,6 @@
+author: "Phoenix4O4"
+delete-after: True
+changes:
+  - bugfix: "Fixed multiple runtime"
+  - admin: "Enhanced Player Panel with more stuff"
+  - admin: "Added Admin Ticket Statistics panel for tracking admin ticket handling performance"
