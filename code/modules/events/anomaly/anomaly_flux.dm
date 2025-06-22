@@ -17,4 +17,4 @@
 /datum/round_event/anomaly/anomaly_flux/announce(fake)
 	if(isnull(impact_area))
 		impact_area = placer.findValidArea()
-	priority_announce("Hyper-energetic flux wave detected on [ANOMALY_ANNOUNCE_DANGEROUS_TEXT] [impact_area.name].", "Anomaly Alert", ANNOUNCER_FLUXANOMALIES) //SKYRAT EDIT CHANGE - ORIGINAL: priority_announce("Hyper-energetic flux wave detected on [ANOMALY_ANNOUNCE_DANGEROUS_TEXT] [impact_area.name].", "Anomaly Alert")
+	priority_announce("Гиперэнергетическая волна потока [ANOMALY_ANNOUNCE_DANGEROUS_TEXT] [impact_area.name].", "Оповещение Об Аномалии", ANNOUNCER_FLUXANOMALIES) //SKYRAT EDIT CHANGE - ORIGINAL: priority_announce("Hyper-energetic flux wave detected on [ANOMALY_ANNOUNCE_DANGEROUS_TEXT] [impact_area.name].", "Anomaly Alert")
