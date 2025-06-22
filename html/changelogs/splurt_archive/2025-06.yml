@@ -18,3 +18,9 @@
   Nuk5513:
   - rscadd: There are now 2 more infinidorm rooms to choose from under the "Misc"
       tab, enjoy your stay!
+2025-06-21:
+  Phoenix4O4:
+  - bugfix: Fixed multiple runtime
+  - admin: Enhanced Player Panel with more stuff
+  - admin: Added Admin Ticket Statistics panel for tracking admin ticket handling
+      performance
