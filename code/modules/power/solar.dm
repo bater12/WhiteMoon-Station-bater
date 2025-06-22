@@ -401,6 +401,7 @@
 		mySolar.material_type = glass_material
 		mySolar.panel.icon_state = "solar_panel_[glass_material.name]"
 		mySolar.panel_edge.icon_state = "solar_panel_[glass_material.name]_edge"
+		qdel(src) // Удаляем сборку после создания панели, чтобы не было дублирования
 		return TRUE
 	return ..()
 
