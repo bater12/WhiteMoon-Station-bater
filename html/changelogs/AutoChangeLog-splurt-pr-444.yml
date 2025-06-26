@@ -1,0 +1,4 @@
+author: "Phoenix4O4"
+delete-after: True
+changes:
+  - bugfix: "Fixed bluescreen when interacting with cyborgs and other non-human mobs"

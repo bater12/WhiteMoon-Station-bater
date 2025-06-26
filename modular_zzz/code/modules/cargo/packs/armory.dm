@@ -16,8 +16,8 @@
 /datum/supply_pack/security/armory/renoster // 1200 за один реностер. 2400 за два.
 	cost = PAYCHECK_COMMAND * 24
 
-/datum/supply_pack/security/armory/sindano // ВТшка со Скуратов, но в два раза лучше. Каждая за 5000. Выше среднего.
-	cost = PAYCHECK_COMMAND * 150
+/datum/supply_pack/security/armory/sindano // ВТшка со Скуратов, но в два раза лучше. Каждая за 3000. Патроны по 500. Выше среднего.
+	cost = PAYCHECK_COMMAND * 105
 
 /datum/supply_pack/security/armory/dragnet // Стандартная цена.
 	cost = PAYCHECK_COMMAND * 36

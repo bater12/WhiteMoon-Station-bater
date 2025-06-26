@@ -24,3 +24,7 @@
   - admin: Enhanced Player Panel with more stuff
   - admin: Added Admin Ticket Statistics panel for tracking admin ticket handling
       performance
+2025-06-25:
+  Yata9ar4su:
+  - bugfix: Fixed the part of the code that was responsible for the CI runtimes for
+      non-carbons

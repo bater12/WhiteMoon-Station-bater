@@ -63,7 +63,7 @@
 
 	var/list/admin_list = list()
 	if(SSdbcore.IsConnected())
-		var/datum/db_query/admin_query = SSdbcore.NewQuery("SELECT DISTINCT ckey FROM admin WHERE rank != 'NEW ADMIN' ORDER BY ckey")
+		var/datum/db_query/admin_query = SSdbcore.NewQuery("SELECT DISTINCT ckey FROM [format_table_name("admin")] WHERE rank != 'NEW ADMIN' ORDER BY ckey")
 		if(admin_query.warn_execute())
 			while(admin_query.NextRow())
 				admin_list += admin_query.item[1]
@@ -147,7 +147,7 @@
 		main_query += "CAST(COALESCE(SUM(CASE WHEN t.action = 'Closed' THEN 1 ELSE 0 END), 0) AS UNSIGNED) AS Closed_count, "
 		main_query += "CAST(COALESCE(SUM(CASE WHEN t.action = 'IC Issue' THEN 1 ELSE 0 END), 0) AS UNSIGNED) AS IC_Issue_count, "
 		main_query += "CAST(COALESCE(SUM(CASE WHEN t.action = 'Interaction' THEN 1 ELSE 0 END), 0) AS UNSIGNED) AS Interaction_count "
-		main_query += "FROM admin a LEFT JOIN ticket t ON CAST(t.sender AS CHAR) = CAST(a.ckey AS CHAR) AND [date_condition] "
+		main_query += "FROM [format_table_name("admin")] a LEFT JOIN ticket t ON CAST(t.sender AS CHAR) = CAST(a.ckey AS CHAR) AND [date_condition] "
 		main_query += "WHERE a.rank != 'NEW ADMIN'"
 
 		if(admin_filter && admin_filter != "")
@@ -172,7 +172,7 @@
 		main_query += "CAST(COALESCE(SUM(CASE WHEN t.action = 'Closed' THEN 1 ELSE 0 END), 0) AS UNSIGNED) AS Closed_count, "
 		main_query += "CAST(COALESCE(SUM(CASE WHEN t.action = 'IC Issue' THEN 1 ELSE 0 END), 0) AS UNSIGNED) AS IC_Issue_count, "
 		main_query += "CAST(COALESCE(SUM(CASE WHEN t.action = 'Interaction' THEN 1 ELSE 0 END), 0) AS UNSIGNED) AS Interaction_count "
-		main_query += "FROM admin a LEFT JOIN ticket t ON CAST(t.sender AS CHAR) = CAST(a.ckey AS CHAR) AND [date_condition] "
+		main_query += "FROM [format_table_name("admin")] a LEFT JOIN ticket t ON CAST(t.sender AS CHAR) = CAST(a.ckey AS CHAR) AND [date_condition] "
 		main_query += "WHERE a.rank != 'NEW ADMIN'"
 
 		if(admin_filter && admin_filter != "")
