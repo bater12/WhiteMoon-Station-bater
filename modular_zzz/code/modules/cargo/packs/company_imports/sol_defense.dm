@@ -8,13 +8,13 @@
 	cost = PAYCHECK_COMMAND * 12
 
 /datum/armament_entry/company_import/sol_defense/longarm/sindano
-	cost = PAYCHECK_COMMAND * 50
+	cost = PAYCHECK_COMMAND * 30
 
 /datum/armament_entry/company_import/sol_defense/longarm/elite
 	cost = PAYCHECK_COMMAND * 45
 
 /datum/armament_entry/company_import/sol_defense/conversionkit/sindano
-	cost = PAYCHECK_COMMAND * 25
+	cost = PAYCHECK_COMMAND * 15
 
 /datum/armament_entry/company_import/sol_defense/magazines/c35_mag
 	cost = PAYCHECK_COMMAND * 3

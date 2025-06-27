@@ -28,7 +28,7 @@
 
 	basic_mob_flags = FLAMMABLE_MOB
 	obj_damage = 75
-	bare_wound_bonus = 15
+	exposed_wound_bonus = 15
 
 	speak_emote = list("screeches")
 	speed = -0.2

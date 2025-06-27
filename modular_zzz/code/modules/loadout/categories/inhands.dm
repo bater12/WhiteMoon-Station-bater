@@ -1,6 +1,7 @@
 /datum/loadout_item/inhand/donator/jukebox
 	name = "Handled Jukebox"
 	item_path = /obj/item/jukebox
+	ckeywhitelist = list("smileycom")
 
 /datum/loadout_item/inhand/donator/serrated_shovel
 	name = "Dull Bone Shovel"

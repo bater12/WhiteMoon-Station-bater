@@ -17,4 +17,4 @@
 /datum/round_event/anomaly/anomaly_hallucination/announce(fake)
 	if(isnull(impact_area))
 		impact_area = placer.findValidArea()
-	priority_announce("Hallucinatory event detected on [ANOMALY_ANNOUNCE_MEDIUM_TEXT] [impact_area.name].", "Anomaly Alert", ANNOUNCER_ANOMALIES) //SKYRAT EDIT CHANGE - ORIGINAL: priority_announce("Hallucinatory event detected on [ANOMALY_ANNOUNCE_MEDIUM_TEXT] [impact_area.name].", "Anomaly Alert")
+	priority_announce("Галлюцинаторное явление [ANOMALY_ANNOUNCE_MEDIUM_TEXT] [impact_area.name].", "Оповещение Об Аномалии", ANNOUNCER_ANOMALIES) //SKYRAT EDIT CHANGE - ORIGINAL: priority_announce("Hallucinatory event detected on [ANOMALY_ANNOUNCE_MEDIUM_TEXT] [impact_area.name].", "Anomaly Alert")
