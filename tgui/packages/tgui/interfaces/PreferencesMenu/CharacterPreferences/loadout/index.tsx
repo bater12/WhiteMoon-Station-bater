@@ -144,7 +144,7 @@ export function LoadoutPage(props) {
         )}
         <Section
           fitted
-          title="&nbsp;"
+          title=" "
           buttons={
             <>
               {/* BUBBER EDIT ADDITION BEGIN: Search in tooltips */}

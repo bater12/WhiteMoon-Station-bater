@@ -151,7 +151,7 @@ export const GlassBlowing = (props) => {
                           }
                           onClick={() => act('Blow')}
                         />
-                        &nbsp;x{glass.stepsRemaining.blow}
+                         x{glass.stepsRemaining.blow}
                       </Table.Cell>
                     )}
                     {glass.stepsRemaining.spin !== 0 && (
@@ -169,7 +169,7 @@ export const GlassBlowing = (props) => {
                           }
                           onClick={() => act('Spin')}
                         />
-                        &nbsp;x{glass.stepsRemaining.spin}
+                         x{glass.stepsRemaining.spin}
                       </Table.Cell>
                     )}
                     {glass.stepsRemaining.paddle !== 0 && (
@@ -181,7 +181,7 @@ export const GlassBlowing = (props) => {
                           tooltip={'You need to use a paddle.'}
                           onClick={() => act('Paddle')}
                         />
-                        &nbsp;x{glass.stepsRemaining.paddle}
+                         x{glass.stepsRemaining.paddle}
                       </Table.Cell>
                     )}
                     {glass.stepsRemaining.shear !== 0 && (
@@ -193,7 +193,7 @@ export const GlassBlowing = (props) => {
                           tooltip={'You need to use shears.'}
                           onClick={() => act('Shear')}
                         />
-                        &nbsp;x{glass.stepsRemaining.shear}
+                         x{glass.stepsRemaining.shear}
                       </Table.Cell>
                     )}
                     {glass.stepsRemaining.jacks !== 0 && (
@@ -205,7 +205,7 @@ export const GlassBlowing = (props) => {
                           tooltip={'You need to use jacks.'}
                           onClick={() => act('Jacks')}
                         />
-                        &nbsp;x{glass.stepsRemaining.jacks}
+                         x{glass.stepsRemaining.jacks}
                       </Table.Cell>
                     )}
                   </Stack.Item>

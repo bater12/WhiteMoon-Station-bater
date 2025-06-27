@@ -64,7 +64,7 @@ export const AntagInfoAssaultops = (props) => {
             <Section>
               <Stack.Item grow={1} align="center">
                 <Box fontSize={0.8} textAlign="right">
-                  GoldeneEye Defnet &nbsp;
+                  GoldeneEye Defnet
                   <Box color="green" as="span">
                     Connection Secure
                   </Box>

@@ -41,7 +41,7 @@ export const MatterItem = (props) => {
   const { matterLeft } = data;
   return (
     <LabeledList.Item label="Units Left">
-      &nbsp;{matterLeft} Units
+       {matterLeft} Units
     </LabeledList.Item>
   );
 };

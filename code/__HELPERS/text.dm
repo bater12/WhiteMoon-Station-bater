@@ -656,7 +656,7 @@ GLOBAL_LIST_INIT(binary, list("0","1"))
 
 	t = replacetext(t, regex("(?:\\r\\n?|\\n)", "g"), "<br>")
 
-	t = replacetext(t, "  ", "&nbsp;&nbsp;")
+	t = replacetext(t, "  ", "  ")
 
 	// Done
 

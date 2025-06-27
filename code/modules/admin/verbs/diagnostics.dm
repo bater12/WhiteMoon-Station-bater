@@ -37,14 +37,14 @@ ADMIN_VERB(radio_report, R_DEBUG, "Radio Report", "Shows a report of all radio d
 		output += "<b>Freq: [fq]</b><br>"
 		var/datum/radio_frequency/fqs = SSradio.frequencies[fq]
 		if (!fqs)
-			output += "&nbsp;&nbsp;<b>ERROR</b><br>"
+			output += "  <b>ERROR</b><br>"
 			continue
 		for (var/filter in fqs.devices)
 			var/list/filtered = fqs.devices[filter]
 			if (!filtered)
-				output += "&nbsp;&nbsp;[filter]: ERROR<br>"
+				output += "  [filter]: ERROR<br>"
 				continue
-			output += "&nbsp;&nbsp;[filter]: [filtered.len]<br>"
+			output += "  [filter]: [filtered.len]<br>"
 			for(var/datum/weakref/device_ref as anything in filtered)
 				var/atom/device = device_ref.resolve()
 				if(!device)
@@ -52,9 +52,9 @@ ADMIN_VERB(radio_report, R_DEBUG, "Radio Report", "Shows a report of all radio d
 					continue
 				if (istype(device, /atom))
 					var/atom/A = device
-					output += "&nbsp;&nbsp;&nbsp;&nbsp;[device] ([AREACOORD(A)])<br>"
+					output += "    [device] ([AREACOORD(A)])<br>"
 				else
-					output += "&nbsp;&nbsp;&nbsp;&nbsp;[device]<br>"
+					output += "    [device]<br>"
 
 	var/datum/browser/browser = new(user, "radioreport", "Radio Logs", 400, 440)
 	browser.set_content(output)

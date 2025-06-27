@@ -474,7 +474,7 @@ const TimePanel = (props) => {
       <Section>
         <Stack justify="space-between">
           <Box fontSize={1.5}>
-            Time Remaining:&nbsp;
+            Time Remaining:
             {currentVote?.timeRemaining || 0}s
           </Box>
           {!!user.isLowerAdmin && (
