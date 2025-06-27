@@ -100,7 +100,7 @@ export const ArmamentStation = (props) => {
                                     textAlign: 'center',
                                   }}
                                 />
-                                &nbsp;{item.name}
+                                 {item.name}
                               </Button>
                             </Stack.Item>
                           ))}

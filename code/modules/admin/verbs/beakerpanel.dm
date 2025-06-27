@@ -224,7 +224,7 @@ ADMIN_VERB(beaker_panel, R_SPAWN, "Spawn Reagent Container", "Spawn a reagent co
 
 					function addReagent(ul, reagentType, reagentName, amount)
 					{
-						$('<li class="reagent" data-type="'+reagentType+'">'+reagentName+'<div><input class="reagent" value="'+amount+'" />&nbsp;&nbsp;<button class="remove-reagent"><i class="far fa-trash-alt"></i>&nbsp;Remove</button></div></li>').insertBefore($(ul).children('li').last());
+						$('<li class="reagent" data-type="'+reagentType+'">'+reagentName+'<div><input class="reagent" value="'+amount+'" />  <button class="remove-reagent"><i class="far fa-trash-alt"></i> Remove</button></div></li>').insertBefore($(ul).children('li').last());
 					  $(ul).children('li').last().prev().find('button').click(function() { $(this).parents('li').remove(); });
 					}
 
@@ -259,7 +259,7 @@ ADMIN_VERB(beaker_panel, R_SPAWN, "Spawn Reagent Container", "Spawn a reagent co
 
 		<div class="width: 100%">
 		<button id="spawn-grenade">
-		<i class="fas fa-bomb"></i>&nbsp;Spawn grenade
+		<i class="fas fa-bomb"></i> Spawn grenade
 		</button>
 			<label for="grenade-type">Grenade type: </label>
 		<select id="grenade-type">
@@ -285,23 +285,23 @@ ADMIN_VERB(beaker_panel, R_SPAWN, "Spawn Reagent Container", "Spawn a reagent co
 			<br />
 			<div>
 			<button class="spawn-container">
-			<i class="fas fa-cog"></i>&nbsp;Spawn
+			<i class="fas fa-cog"></i> Spawn
 				</button>
-				&nbsp;&nbsp;&nbsp;
+
 				<button class="import-reagents">
-			<i class="fas fa-file-import"></i>&nbsp;Import
+			<i class="fas fa-file-import"></i> Import
 				</button>
-				&nbsp;&nbsp;&nbsp;
+
 				<button class="export-reagents">
-			<i class="fas fa-file-export"></i>&nbsp;Export
+			<i class="fas fa-file-export"></i> Export
 				</button>
 
 			</div>
 				<ul>
 				<li>
 
-					<select class="select-new-reagent"></select><div class="reagent-div"><input style="width: 50%" type="text" name="newreagent" value="40" />&nbsp;&nbsp;<button class="add-reagent">
-				<i class="fas fa-plus"></i>&nbsp;Add
+					<select class="select-new-reagent"></select><div class="reagent-div"><input style="width: 50%" type="text" name="newreagent" value="40" />  <button class="add-reagent">
+				<i class="fas fa-plus"></i> Add
 				</button>
 
 				</div>

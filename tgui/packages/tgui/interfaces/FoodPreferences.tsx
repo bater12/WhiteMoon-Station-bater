@@ -60,7 +60,7 @@ export const FoodPreferences = (props) => {
                         Preferences are Invalid!{' '}
                         {data.invalid.charAt(0).toUpperCase() +
                           data.invalid.slice(1)}{' '}
-                        |&nbsp;
+                        |
                       </Box>
                     ) : (
                       <Box as="span" color="green">

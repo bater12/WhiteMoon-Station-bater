@@ -1,5 +1,5 @@
 /// Does 4 spaces. Used as a makeshift tabulator.
-#define FOURSPACES "&nbsp;&nbsp;&nbsp;&nbsp;"
+#define FOURSPACES "    "
 
 /// Standard maptext
 /// Prepares a text to be used for maptext. Use this so it doesn't look hideous.
