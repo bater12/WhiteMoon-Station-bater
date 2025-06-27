@@ -235,7 +235,7 @@ export const PersonalCrafting = (props) => {
     activeCategory === 'Can Make'
       ? 99 - Object.keys(recipe.reqs).length
       : Number(craftability[recipe.ref]),
-    recipe.name.toLowerCase(),
+    typeof recipe.name === 'string' ? recipe.name.toLowerCase() : '',
   ]);
   if (searchText.length > 0) {
     recipes = filter(recipes, searchName);

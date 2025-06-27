@@ -66,6 +66,10 @@
 /datum/world_topic/status/Run(list/input)
 	. = ..()
 
+	var/list/adm = get_admin_counts()
+	var/list/presentmins = adm["present"]
+	var/list/afkmins = adm["afk"]
+
 	data = list()
 
 	data["mode"] = SSgamemode.storyteller ? SSgamemode.storyteller.name : "N/A"
@@ -86,6 +90,9 @@
 	data["revision_date"] = GLOB.revdata.date
 
 	data["round_duration"] = world.time - SSticker.round_start_time
+	data["security_level"] = SSsecurity_level ? SSsecurity_level.get_current_level_as_number() : "0"
+
+	data["admins"] = length(presentmins) + length(afkmins)
 
 	statuscode = 200
 	response = "Status retrieved"

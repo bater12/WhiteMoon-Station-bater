@@ -16,6 +16,20 @@
 #define DEBUG
 // END_PREFERENCES
 
+// BEGIN_DMAPI
+#define TGS_EXTERNAL_CONFIGURATION
+#define TGS_DEFINE_AND_SET_GLOBAL(Name, Value) var/global/##Name = ##Value
+#define TGS_READ_GLOBAL(Name) global.##Name
+#define TGS_WRITE_GLOBAL(Name, Value) global.##Name = ##Value
+#define TGS_WORLD_ANNOUNCE(message) world << ##message
+#define TGS_INFO_LOG(message) world.log << "TGS Info: [##message]"
+#define TGS_WARNING_LOG(message) world.log << "TGS Warning: [##message]"
+#define TGS_ERROR_LOG(message) world.log << "TGS Error: [##message]"
+#define TGS_NOTIFY_ADMINS(event) world.log << "TGS Admin Message: [##event]"
+#define TGS_CLIENT_COUNT global.client_count
+#define TGS_PROTECT_DATUM(Path)
+// END_DMAPI
+
 // BEGIN_INCLUDE
 #include "__odlint.dm"
 #include "_maps\_basemap.dm"
@@ -23,6 +37,9 @@
 #include "code\_compile_options.dm"
 #include "code\_experiments.dm"
 #include "code\world.dm"
+#include "tgs.dm"
+#include "tgs\includes.dm"
+#include "DMAPI.dm"
 #include "code\__DEFINES\__globals.dm"
 #include "code\__DEFINES\_atoms.dm"
 #include "code\__DEFINES\_bitfields.dm"
@@ -251,7 +268,6 @@
 #include "code\__DEFINES\tcg.dm"
 #include "code\__DEFINES\text.dm"
 #include "code\__DEFINES\tgs.config.dm"
-#include "code\__DEFINES\tgs.dm"
 #include "code\__DEFINES\tgui.dm"
 #include "code\__DEFINES\time.dm"
 #include "code\__DEFINES\tools.dm"
@@ -906,7 +922,6 @@
 #include "code\controllers\subsystem\traitor.dm"
 #include "code\controllers\subsystem\transport.dm"
 #include "code\controllers\subsystem\tts.dm"
-#include "code\controllers\subsystem\tutorials.dm"
 #include "code\controllers\subsystem\unplanned_ai_idle_controllers.dm"
 #include "code\controllers\subsystem\unplanned_controllers.dm"
 #include "code\controllers\subsystem\verb_manager.dm"
@@ -914,6 +929,7 @@
 #include "code\controllers\subsystem\vote.dm"
 #include "code\controllers\subsystem\wardrobe.dm"
 #include "code\controllers\subsystem\weather.dm"
+#include "code\controllers\subsystem\redbot.dm"
 #include "code\controllers\subsystem\dynamic\dynamic.dm"
 #include "code\controllers\subsystem\dynamic\dynamic_hijacking.dm"
 #include "code\controllers\subsystem\dynamic\dynamic_logging.dm"
@@ -6511,7 +6527,6 @@
 #include "code\modules\surgery\organs\internal\vocal_cords\_vocal_cords.dm"
 #include "code\modules\tgchat\message.dm"
 #include "code\modules\tgchat\to_chat.dm"
-#include "code\modules\tgs\includes.dm"
 #include "code\modules\tgui\external.dm"
 #include "code\modules\tgui\states.dm"
 #include "code\modules\tgui\status_composers.dm"
@@ -6573,11 +6588,6 @@
 #include "code\modules\transport\tram\tram_remote.dm"
 #include "code\modules\transport\tram\tram_signals.dm"
 #include "code\modules\transport\tram\tram_structures.dm"
-#include "code\modules\tutorials\_tutorial.dm"
-#include "code\modules\tutorials\tutorial_instruction.dm"
-#include "code\modules\tutorials\tutorial_skip.dm"
-#include "code\modules\tutorials\tutorials\drop.dm"
-#include "code\modules\tutorials\tutorials\switch_hands.dm"
 #include "code\modules\unit_tests\_unit_tests.dm"
 #include "code\modules\uplink\uplink_devices.dm"
 #include "code\modules\uplink\uplink_items.dm"
