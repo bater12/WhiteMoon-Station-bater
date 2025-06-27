@@ -547,7 +547,7 @@
 	emote_type = EMOTE_AUDIBLE | EMOTE_VISIBLE
 
 /datum/emote/living/taunt
-	key = "tt"
+	key = "taunt"
 	key_third_person = "taunts"
 	message = "strikes a pose!"
 	message_param = "taunts %t!"
@@ -556,7 +556,7 @@
 	//is_muzzled = FALSE
 
 /datum/emote/living/taunt/alt
-	key = "tt2"
+	key = "taunt2"
 	key_third_person = "taunts2"
 	sound_volume = 100
 	sound = 'modular_zzplurt/sound/voice/orchestrahit.ogg'

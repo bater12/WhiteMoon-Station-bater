@@ -28,3 +28,6 @@
   Yata9ar4su:
   - bugfix: Fixed the part of the code that was responsible for the CI runtimes for
       non-carbons
+2025-06-26:
+  Phoenix4O4:
+  - bugfix: Fixed bluescreen when interacting with cyborgs and other non-human mobs
