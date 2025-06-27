@@ -314,14 +314,7 @@ GLOBAL_DATUM_INIT(ahelp_tickets, /datum/admin_help_tickets, new)
 		webhook_sent = WEBHOOK_URGENT
 	//send it to TGS if nobody is on and tell us how many were on
 	var/admin_number_present = send2tgs_adminless_only(initiator_ckey, "Ticket #[id]: [message_to_send]")
-	// BUBBER EDIT BEGIN
-	var/list/adm = get_admin_counts(R_BAN)
-	var/list/afkmins = adm["afk"]
-	var/list/stealthmins = adm["stealth"]
-	var/list/powerlessmins = adm["noflags"]
-	var/list/allmins = adm["total"]
-	send2adminchat("Ticket #[id]","[message_to_send] || Online Admins : \[[english_list(allmins)]\] : All admins stealthed\[[english_list(stealthmins)]\], AFK\[[english_list(afkmins)]\], or lacks +BAN\[[english_list(powerlessmins)]\]!") // BUBBER EDIT ADDITION
-	// BUBBER EDIT END
+	SSredbot.send_discord_message("admin", "Ticket #[id] created by [usr.ckey] ([usr.real_name]): [name]", "ticket")  // 3raz3rr edit
 	log_admin_private("Ticket #[id]: [key_name(initiator)]: [name] - heard by [admin_number_present] non-AFK admins who have +BAN.")
 	if(admin_number_present <= 0)
 		to_chat(initiator, span_notice("No active admins are online, your adminhelp was sent to admins who are available through IRC or Discord."), confidential = TRUE)
