@@ -42,3 +42,8 @@
 	name = "Monocular Tactical Balaclava"
 	item_path = /obj/item/clothing/mask/gas/syndicate/mtb
 	ckeywhitelist = list("hellsinggc")
+
+/datum/loadout_item/cigarette/pipe/long_pipe
+	name = "Long smoking pipe"
+	item_path = /obj/item/cigarette/pipe/long_pipe
+	ckeywhitelist = list("nyctealust")
