@@ -30,27 +30,27 @@ def parse_text_flags(text, previous):
         for flag in flags:
             sign = flag[:1]
             if flag[1:] in ("@", "prev"):
-                if sign is "+":
+                if sign == "+":
                     flags_int = previous[0]
-                elif sign is "-":
+                elif sign == "-":
                     exclude_flags_int = previous[1]
-                elif sign is "*":
+                elif sign == "*":
                     can_edit_flags_int = previous[2]
                 continue
             if flag[1:] in ("EVERYTHING", "HOST", "ALL"):
-                if sign is "+":
+                if sign == "+":
                     flags_int = 65535
-                elif sign is "-":
+                elif sign == "-":
                     exclude_flags_int = 65535
-                elif sign is "*":
+                elif sign == "*":
                     can_edit_flags_int = 65535
                 continue
             if flag[1:] in flag_values:
-                if sign is "+":
+                if sign == "+":
                     flags_int += flag_values[flag[1:]]
-                elif sign is "-":
+                elif sign == "-":
                     exclude_flags_int += flag_values[flag[1:]]
-                elif sign is "*":
+                elif sign == "*":
                     can_edit_flags_int += flag_values[flag[1:]]
     flags_int = max(min(65535, flags_int), 0)
     exclude_flags_int = max(min(65535, exclude_flags_int), 0)
@@ -82,7 +82,7 @@ with open("..\\config\\admin_ranks.txt") as rank_file:
             rank = "".join((c for c in matches.group(1) if c not in ckeyExformat))
             flags = parse_text_flags(matches.group(2), previous)
             previous = flags
-            cursor.execute("INSERT INTO {0} (rank, flags, exclude_flags, can_edit_flags) VALUES ('{1}', {2}, {3}, {4})".format(ranks_table, rank, flags[0], flags[1], flags[2]))
+            cursor.execute("REPLACE INTO {0} (rank, flags, exclude_flags, can_edit_flags) VALUES ('{1}', {2}, {3}, {4})".format(ranks_table, rank, flags[0], flags[1], flags[2]))
 with open("..\\config\\admins.txt") as admins_file:
     previous = 0
     ckeyformat = string.punctuation.replace("@", " ")
