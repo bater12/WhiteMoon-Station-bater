@@ -1,0 +1,5 @@
+author: "MysteryMan21333"
+delete-after: True
+changes:
+  - code_imp: "Changes the function of mystery_box/fishing."
+  - code_imp: "Adds new .dm files within the modular code to change functionality."

@@ -61,3 +61,5 @@
 /obj/item/clothing/suit/armor/riot/knight
 	icon = 'icons/obj/clothing/suits/armor.dmi'
 	worn_icon = 'icons/mob/clothing/suits/armor.dmi'
+	uses_advanced_reskins = FALSE
+	unique_reskin = null
