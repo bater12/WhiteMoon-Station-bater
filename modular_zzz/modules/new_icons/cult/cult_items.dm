@@ -34,3 +34,9 @@
 
 /obj/item/shuttle_curse
 	icon = 'modular_zzz/icons/obj/antags/cult/cult.dmi'
+
+/obj/item/clothing/glasses/hud/health/night/cultblind
+	invis_override = SEE_INVISIBLE_HIDDEN_RUNES
+
+/mob/living/simple_animal/hostile/construct
+	see_invisible = SEE_INVISIBLE_HIDDEN_RUNES

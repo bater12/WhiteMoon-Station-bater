@@ -592,6 +592,7 @@
 #include "code\__DEFINES\~~~splurt_defines\traits\defines.dm"
 #include "code\__DEFINES\~~~splurt_defines\traits\sources.dm"
 #include "code\__DEFINES\~~~~white_defines\click.dm"
+#include "code\__DEFINES\~~~~white_defines\sight.dm"
 #include "code\__DEFINES\~~~~white_defines\subsystems.dm"
 #include "code\__DEFINES\~~~~white_defines\traits_declaration.dm"
 #include "code\__HELPERS\_auxtools_api.dm"

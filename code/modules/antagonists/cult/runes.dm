@@ -124,7 +124,7 @@ Runes can either be invoked by one's self or with many different cultists. Each 
 
 /obj/effect/rune/proc/conceal() //for talisman of revealing/hiding
 	visible_message(span_danger("[src] fades away."))
-	SetInvisibility(INVISIBILITY_OBSERVER, id=type)
+	SetInvisibility(INVISIBILITY_HIDDEN_RUNES, id=type)
 	alpha = 100 //To help ghosts distinguish hidden runes
 
 /obj/effect/rune/proc/reveal() //for talisman of revealing/hiding
