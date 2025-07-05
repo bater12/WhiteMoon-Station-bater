@@ -405,14 +405,14 @@ export const BubberChangelog = (props) => {
         contributed to the game.
       </p>
       <p>
-        <a href="https://github.com/BlueMoon-Labs/WhiteMoon-Station">
+        <a href="https://github.com/bater12/107HornyMoon">
           Репозиторий тута
         </a>
         .
       </p>
       <p>
         {'Вы можете присоединиться к нашему Дискорд-Серверу '}
-        <a href="https://discord.gg/ss13-bluemoon">вот здесь</a>!
+        <a href="https://discord.gg/JhYNnTgpHx">вот здесь</a>!
       </p>
       <DateDropdown
         dates={dates}
