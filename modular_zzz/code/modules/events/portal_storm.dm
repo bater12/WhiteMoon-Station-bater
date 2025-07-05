@@ -46,7 +46,7 @@
 /datum/round_event/portal_storm
 	var/triggersound
 
-/datum/round_event/portal_storm/proc/do_announce()
+/datum/round_event/portal_storm/announce(fake)
 	set waitfor = FALSE
 	sound_to_playing_players('sound/effects/magic/lightning_chargeup.ogg')
 	sleep(8 SECONDS)

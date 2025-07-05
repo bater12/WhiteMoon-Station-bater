@@ -38,5 +38,5 @@
 /obj/item/clothing/glasses/hud/health/night/cultblind
 	invis_override = SEE_INVISIBLE_HIDDEN_RUNES
 
-/mob/living/simple_animal/hostile/construct
+/mob/living/basic/construct
 	see_invisible = SEE_INVISIBLE_HIDDEN_RUNES
