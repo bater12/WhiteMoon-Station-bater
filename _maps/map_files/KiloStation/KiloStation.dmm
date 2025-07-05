@@ -11873,16 +11873,6 @@
 /area/station/cargo/miningoffice)
 "dVN" = (
 /obj/structure/closet/secure_closet/personal/cabinet,
-/obj/item/clothing/suit/jacket{
-	desc = "All the class of a trenchcoat without the security fibers.";
-	icon_state = "noirdet";
-	name = "trenchcoat"
-	},
-/obj/item/clothing/suit/jacket{
-	desc = "All the class of a trenchcoat without the security fibers.";
-	icon_state = "detective";
-	name = "trenchcoat"
-	},
 /obj/item/clothing/head/fedora,
 /obj/item/clothing/head/fedora{
 	icon_state = "detective"
@@ -19475,18 +19465,6 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet{
 	name = "detective closet"
-	},
-/obj/item/clothing/suit/jacket{
-	desc = "All the class of a trenchcoat without the security fibers.";
-	icon_state = "noirdet";
-	name = "trenchcoat";
-	pixel_x = 4;
-	pixel_y = 4
-	},
-/obj/item/clothing/suit/jacket{
-	desc = "All the class of a trenchcoat without the security fibers.";
-	icon_state = "detective";
-	name = "trenchcoat"
 	},
 /obj/item/clothing/head/fedora{
 	pixel_x = 4;
