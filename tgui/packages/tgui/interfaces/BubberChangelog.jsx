@@ -396,7 +396,7 @@ export const BubberChangelog = (props) => {
 
   const header = (
     <Section>
-      <h1>WhiteMoon-Station</h1>
+      <h1>[SS107]Horny Jail</h1>
       <p>
         <b>Thanks to: </b>
         /tg/station 13, Effigy, Stellar Haven, Baystation 12, /vg/station,
