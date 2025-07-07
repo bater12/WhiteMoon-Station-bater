@@ -47,3 +47,7 @@
 	name = "Long smoking pipe"
 	item_path = /obj/item/cigarette/pipe/long_pipe
 	ckeywhitelist = list("nyctealust")
+
+/datum/loadout_item/mask/balaclava/breath
+	name = "Breathaclava"
+	item_path = /obj/item/clothing/mask/balaclava/breath

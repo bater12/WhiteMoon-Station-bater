@@ -88,3 +88,7 @@
 	icon_state = "donator_pipeoff"
 	icon_on = "donator_pipeoff"
 	icon_off = "donator_pipeoff"
+
+/obj/item/clothing/mask/balaclava/breath
+	name = "Breathaclava"
+	clothing_flags = BLOCK_GAS_SMOKE_EFFECT | MASKINTERNALS | GAS_FILTERING
