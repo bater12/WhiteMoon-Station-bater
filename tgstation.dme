@@ -10412,6 +10412,7 @@
 #include "modular_zzz\code\modules\bitrunning\domains\medium\blood_drunk_miner.dm"
 #include "modular_zzz\code\modules\bitrunning\domains\medium\syndicate_assault.dm"
 #include "modular_zzz\code\modules\cargo\expressconsole.dm"
+#include "modular_zzz\code\modules\cargo\goodies.dm"
 #include "modular_zzz\code\modules\cargo\supplypod.dm"
 #include "modular_zzz\code\modules\cargo\packs\armory.dm"
 #include "modular_zzz\code\modules\cargo\packs\goodies.dm"
