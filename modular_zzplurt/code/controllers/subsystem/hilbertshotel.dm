@@ -226,8 +226,8 @@ SUBSYSTEM_DEF(hilbertshotel)
 	/* Not necessary thanks to the ghost cafe configs
 	var/list/all_living_mobs = user.get_all_contents_type(/mob/living)
 	for(var/atom/any_atom in all_living_mobs)
-		if(istype(any_atom, /obj/item/clothing/head/mob_holder))
-			var/obj/item/clothing/head/mob_holder/some_holder = any_atom
+		if(istype(any_atom, /obj/item/mob_holder))
+			var/obj/item/mob_holder/some_holder = any_atom
 			some_holder.release()
 		if(!isliving(any_atom))
 			continue
@@ -307,8 +307,8 @@ SUBSYSTEM_DEF(hilbertshotel)
 	/* Not necessary thanks to the ghost cafe configs
 	var/list/all_living_mobs = user.get_all_contents_type(/mob/living)
 	for(var/atom/any_atom in all_living_mobs)
-		if(istype(any_atom, /obj/item/clothing/head/mob_holder))
-			var/obj/item/clothing/head/mob_holder/some_holder = any_atom
+		if(istype(any_atom, /obj/item/mob_holder))
+			var/obj/item/mob_holder/some_holder = any_atom
 			some_holder.release()
 		if(!isliving(any_atom))
 			continue

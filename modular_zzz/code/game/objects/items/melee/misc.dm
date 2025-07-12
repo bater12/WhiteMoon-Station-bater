@@ -79,7 +79,8 @@
 		user.add_mood_event("badass_antag", /datum/mood_event/badass_antag)
 
 /obj/item/melee/sabre/kazeshini/dropped(mob/living/user)
-	icon_state = "sabre_drop"
+	if(!(src.item_flags & IN_STORAGE))
+		icon_state = "sabre_drop"
 	if(user && user.mind)
 		user.clear_mood_event("badass_antag")
 	. = ..()
@@ -102,7 +103,8 @@
 		user.add_mood_event("badass_antag", /datum/mood_event/badass_antag)
 
 /obj/item/melee/sabre/cargo/kazeshini/dropped(mob/living/user)
-	icon_state = "sabre_drop"
+	if(!(src.item_flags & IN_STORAGE))
+		icon_state = "sabre_drop"
 	if(user && user.mind)
 		user.clear_mood_event("badass_antag")
 	. = ..()
